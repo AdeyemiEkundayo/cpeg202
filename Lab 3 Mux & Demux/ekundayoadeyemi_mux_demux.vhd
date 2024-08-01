@@ -34,15 +34,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- Entity declaration for a multiplexer-demultiplexer (mux-demux) system named ekundayoadeyemi_mux_demux.
 -- This system includes inputs I0 to I3, a 2-bit selector 'sel', and outputs Y0 to Y3.
 entity ekundayoadeyemi_mux_demux is
-    Port ( I0 : in STD_LOGIC;  -- Input signal 0
-           I1 : in STD_LOGIC;  -- Input signal 1
-           I2 : in STD_LOGIC;  -- Input signal 2
-           I3 : in STD_LOGIC;  -- Input signal 3
+    Port ( I0 : in STD_LOGIC;  -- Input signal 00
+           I1 : in STD_LOGIC;  -- Input signal 01
+           I2 : in STD_LOGIC;  -- Input signal 02
+           I3 : in STD_LOGIC;  -- Input signal 03
            sel : in STD_LOGIC_VECTOR(1 downto 0);  -- 2-bit selector to choose the input
-           Y0 : out STD_LOGIC;  -- Output signal 0
-           Y1 : out STD_LOGIC;  -- Output signal 1
-           Y2 : out STD_LOGIC;  -- Output signal 2
-           Y3 : out STD_LOGIC); -- Output signal 3
+           Y0 : out STD_LOGIC;  -- Output signal 00
+           Y1 : out STD_LOGIC;  -- Output signal 01
+           Y2 : out STD_LOGIC;  -- Output signal 02
+           Y3 : out STD_LOGIC); -- Output signal 03
 end ekundayoadeyemi_mux_demux;
 
 -- Architecture declaration of the mux-demux system.
@@ -50,10 +50,10 @@ architecture Behavioral of ekundayoadeyemi_mux_demux is
 
 -- Component declaration for a 2-to-1 multiplexer named ekundayoadeyemi_mux2.
 component ekundayoadeyemi_mux2 port (
-     I0 : in STD_LOGIC;  -- Input signal 0
-     I1 : in STD_LOGIC;  -- Input signal 1
-     I2 : in STD_LOGIC;  -- Input signal 2
-     I3 : in STD_LOGIC;  -- Input signal 3
+     I0 : in STD_LOGIC;  -- Input signal 00
+     I1 : in STD_LOGIC;  -- Input signal 01
+     I2 : in STD_LOGIC;  -- Input signal 02
+     I3 : in STD_LOGIC;  -- Input signal 03
      sel : in STD_LOGIC_VECTOR(1 downto 0);  -- 2-bit selector to choose the input
      Y : out STD_LOGIC);  -- Output signal of the multiplexer
 end component; 
